@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="icon" type="image/png" href="../images/icon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>¡Apadrina a tu michi!</title>
+</head>
+
+<body>
+  <h1> ¿Qué michi te gustaría apadrinar? </h1>
+  <p id="parrafo">¡Hola! Somos una ONG que busca padrinos para estos extraordinarios michis. A continuación te vamos a
+    mostrar una
+    lista de michis a los que podrás apadrinar dando una pequeña donación.<br> <b>Para realizar el apadrinamiento tan
+      sólo tendrás que cubrir un pequeño formulario al final de la página. Una vez cubierto tu michi apadrinado se
+      añadirá a la lista junto con el nombre que hayas elegido para él. </b>¡Elige a tu michi!</p>
+
+
+
+  <div id="lista">
+
+    <ul>
+      <li>Jim
+        <br> Me gusta la cerveza.
+        <br>
+        <br> <img src="../images/Jim.jpg" alt="Imagen michi feliz">
+      </li>
+
+      <li>Pam
+        <br> Me gusta la oficina.
+        <br>
+        <br> <img src="../images/Pam.jpg" alt="Imagen michi triste">
+      </li>
+
+      <li>Dwight
+        <br> Me gusta la caza.
+        <br>
+        <br> <img src="../images/Dwight.jpg" alt="Imagen michi enfadado">
+      </li>
+
+      <li>Angela
+        <br> Me gusta la música.
+        <br>
+        <br> <img src="../images/Angela.JPG" alt="Imagen michi tos">
+      </li>
+
+      <li>Stanley
+        <br> Me gusta el té.
+        <br>
+        <br> <img src="../images/Stanley.jpg" alt="Imagen michi cansado">
+      </li>
+
+      <li>Ryan
+        <br> Me gusta la informática.
+        <br>
+        <br> <img src="../images/Ryan.jpg" alt="Imagen michi informático">
+      </li>
+
+      <li>Michael
+        <br> Me gusta la fiesta.
+        <br>
+        <br> <img src="../images/Michael.jpg" alt="Imagen michi catarí">
+      </li>
+    </ul>
+
+  </div>
+
+  <div id="dialogo"> 
+    <button type="button" onclick="abrirDialogo('dialogo2', true)" >Apadrinar</button>
+  </div>
+
+  <dialog id="dialogo2" class="ventana-dialogo">
+
+    <h2> FORMULARIO:</h2>
+    <form>
+
+      <fieldset>
+        <label> Nombre *: </label>
+        <input type="text" name="nombre" size="40" placeholder="¿Cómo te llamas?" id="nombre" required>
+      </fieldset>
+
+      <fieldset>
+        <label> Fecha de adopción: </label>
+        <input type="date" name="fecha" id="fecha">
+      </fieldset>
+
+      <fieldset>
+        <label> Michis disponibles *: </label>
+        <select name="menu" id="img" required>
+          <option value=""> --- </option>
+          <option value="../images/Jim.jpg">Jim</option>
+          <option value="../images/Pam.jpg">Pam</option>
+          <option value="../images/Dwight.jpg">Dwight</option>
+          <option value="../images/Angela.JPG">Angela</option>
+          <option value="../images/Stanley.jpg">Stanley</option>
+          <option value="../images/Ryan.jpg">Ryan</option>
+          <option value="../images/Michael.jpg">Michael</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label> Cuanto quieres donar a la ONG? * </label>
+        <br>(Min:1 €, Max: 10 €)<br>
+        <input type="number" name="donacion" min="1" max="10" step="1" id="don" required>
+      </fieldset>
+      <p> * indica campo obligatorio</p>
+      <input type="submit" name="Enviar" id="sub">
+    </form>
+    <p></p>
+    <button type="button" onclick="cerrarDialogo('dialogo2')">Cerrar</button>
+
+  </dialog>
+  <footer>
+    <p id="bottom"> 😺 ¡Miau! 😺 </p>
+  </footer>
+  <script src="../javascript/index.js"></script>
+</body>
+
+</html>

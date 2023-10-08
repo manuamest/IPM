@@ -1,0 +1,89 @@
+/* Diseño CSS elegido: Salesforce Lightning Design System */
+body {
+  background-color: rgb(238, 244, 255);
+}
+
+h1 {
+  color: rgb(1, 68, 134);
+  font-style: italic;
+}
+h2 {
+  color: rgb(1, 68, 134);
+}
+p {
+  color: rgb(1, 68, 134);
+}
+
+li {
+  padding: 10px;
+  color: rgb(1, 68, 134);
+}
+
+form {
+  border-color: rgb(1, 68, 134);
+  border-width: 5px;
+  border-style: double;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#sub {
+  cursor: pointer;
+  background-color: rgb(3, 45, 96);
+  color: rgb(255, 255, 255);
+  width: 50%;
+  height: 50px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(3, 45, 96);
+  color: rgb(255, 255, 255);
+  width: 300px;
+  height: 50px;
+}
+
+#nombre {
+  width: 70%;
+}
+
+#bottom {
+  text-align: center;
+}
+
+#parrafo {
+  padding: 20px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#dialogo {
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  img {
+    width: 75%;
+    height: 75%;
+  }
+
+  button {
+    width: 600px
+  }
+
+  #dialogo {
+    text-align: center;
+  }
+
+  #lista {
+    text-align: center;
+    margin-bottom: 430px;
+  }
+  li {
+    width: 10em;
+    float: left;
+  }
+}

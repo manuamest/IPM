@@ -1,0 +1,58 @@
+.title{
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    
+    
+}
+.spinner{
+    color: white;
+}
+.window{
+    background-color: #000000;
+}
+.separator{
+    background-color: white;
+    
+}
+.separator_card{
+    background-color: black;
+    
+}
+.card{
+    border-radius: 20px;
+    background-color: rgba(137, 43, 226, 0.575);
+    
+    
+}
+
+.card_hidden{
+    border-radius: 20px;
+    background-color: black;
+}
+
+.arrow{
+    font-family: "Courier New";
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.error_text{
+    font-family: "Courier New";
+    font-size: 50px;
+    color: white;
+}
+
+.label{
+    color: white;
+}
+
+.label_hidden{
+    color: black;
+}
+
+.buscar:hover{
+    background: blueviolet;
+}
